@@ -10,7 +10,8 @@ const dataMaker = (
   brand,
   rating,
   numReviews,
-  description
+  description,
+  countStocks
 ) => {
   data.products.push({
     id,
@@ -21,6 +22,7 @@ const dataMaker = (
     rating,
     numReviews,
     description,
+    countStocks,
   });
 };
 
@@ -32,18 +34,20 @@ dataMaker(
   "anon",
   5,
   10,
-  "high quality product"
+  "high quality product",
+  0
 );
 
 dataMaker(
   2,
   "Happy Product",
-  "images/happy.jpg",
+  "images/happy2.jpg",
   120,
   "anon",
-  4.5,
+  3.5,
   10,
-  "high quality product"
+  "high quality product",
+  3
 );
 dataMaker(
   3,
@@ -53,7 +57,8 @@ dataMaker(
   "anon",
   4.5,
   10,
-  "high quality product"
+  "high quality product",
+  5
 );
 dataMaker(
   4,
@@ -63,7 +68,8 @@ dataMaker(
   "anon",
   4.5,
   10,
-  "high quality product"
+  "high quality product",
+  7
 );
 dataMaker(
   5,
@@ -73,5 +79,6 @@ dataMaker(
   "anon",
   4.5,
   10,
-  "high quality product"
+  "high quality product",
+  3
 );

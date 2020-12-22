@@ -4,8 +4,8 @@ function Rating({ ratings }) {
   const ratingMaker = (number) => {
     if (ratings >= number) {
       return "fa fa-star";
-    } else if (ratings >= number / 2) {
-      return "fa fa-star-half";
+    } else if (ratings >= number - 0.5) {
+      return "fas fa-star-half-alt";
     } else {
       return "far fa-star";
     }

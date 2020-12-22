@@ -76,6 +76,10 @@
   justify-content: center;
 }
 
+.row.top {
+  align-items: flex-start;
+}
+
 img {
   border-radius: 0.5rem;
   object-fit: cover;

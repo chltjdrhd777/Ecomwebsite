@@ -2,8 +2,7 @@ import React from "react";
 import Card from "components/HomeComp/Card";
 import { data } from "data";
 
-function Main() {
-  console.log(data);
+function HomeScreen() {
   return (
     <main>
       <div className="row center">
@@ -15,4 +14,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default HomeScreen;

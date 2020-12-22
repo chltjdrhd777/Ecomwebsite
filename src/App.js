@@ -1,17 +1,22 @@
+import Footer from "components/HomeComp/Footer";
+import Header from "components/HomeComp/Header";
+import HomeScreen from "components/HomeComp/HomeScreen";
+import ProductScreen from "components/HomeComp/ProductScreen";
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Cart from "routes/Cart";
-import Home from "routes/Home";
-import Product from "routes/Product";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "scss/Home.scss";
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/cart" component={Cart} />
-        <Route path="/product" component={Product} />
-      </Switch>
+      <div className="grid-container">
+        <Header />
+
+        <Route exact path="/" component={HomeScreen} />
+        <Route path="/product/:id" component={ProductScreen} />
+
+        <Footer />
+      </div>
     </Router>
   );
 }
