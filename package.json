@@ -1,6 +1,8 @@
 {
   "name": "develop",
   "version": "0.1.0",
+  "type": "module",
+  "proxy": "http://127.0.0.1:5000",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -39,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "axios": "^0.21.1",
     "mongoose": "^5.11.8"
   }
 }
